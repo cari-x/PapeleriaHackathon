@@ -1,19 +1,13 @@
-:root{
-    font-family: 'Montserrat', sans-serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Monserrat';
-    font-weight: 400;
-    background-color: #ededed;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-.container {
+    <style>
+        .container {
     width: 1000px;
     margin: auto;
     transition: 0.5;
@@ -108,90 +102,29 @@ header .shopping span {
 .active .container {
     transform: translateX(-200px);
 }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <header>
+            <h1> Paper Piper Power</h1>
+            <div class="shopping">
+                <img src="img/carrito.png">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="list"></div>
+    </div>
+    
+    <!-- Sección de carrito de compras -->
+    <div class="card">
+        <h1>Carrito de compras</h1> 
+        <ul class="listCard"></ul>
+        <div class="checkout">
+            <div class="total">0</div>
+            <div class="closeShopping">Cerrar</div>
+        </div>
+    </div>
+</body>
+</html>
 
-
-/***** MARCAS *****/
-.marcas__container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.brand{
-    margin:auto;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.marca__img1 {
-    width: 150px;
-}
-
-.marca__img {
-    width: 200px;
-}
-
-/***** FOOTER ******/
-
-.footer {
-    padding: 40px 0;
-    background-color: #fff;
-}
-
-.footer .social {
-    text-align: center;
-    padding-bottom: 25px;
-    color: #4b4c4d;
-}
-
-.footer .social a {
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-}
-
-.footer .social a:hover {
-    opacity: 0.9;
-    color: #2A7CC7;
-}
-
-.footer ul {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer ul li {
-display: inline-block;
-padding: 0 15px;
-}
-
-.footer ul li a:hover {
-    opacity: 1;
-}
-
-.footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
