@@ -1,3 +1,5 @@
+import { addProductsShoppingCart } from './addProductoCarrito.js'
+
 const galleryProducts = document.querySelector('.productosCards');
 
 // Es crear el HTML para mostrarlo en pantalla de los productos de home
@@ -29,7 +31,7 @@ export function productRender(array) {
         
         //Eventos de escucha
         contenedorImagen.addEventListener('click', () => createProductDetailAside (product.get('precio'),product.get('nombre'),product.get('descripcion'),product.get('imagen')));
-        // botonAñadirCarrito.addEventListener('click', () => createProductDetailAside (product.precio,product.nombre,'descripcion',product.image));
+        botonAñadirCarrito.addEventListener('click', () => addProductsShoppingCart (product.precio,product.nombre,'descripcion',product.image));
     }   
 }
 
@@ -74,9 +76,7 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
 
     //Eventos de escucha
     contenedorIconClose.addEventListener('click', cerrarModal)
-    // addButton.addEventListener('click', addProductsShoppingCart)
-
-    // openProductDetailAside ()
+    botonAñadir.addEventListener('click', addProductsShoppingCart)
 }
 
 // Templeate para crear el modal
