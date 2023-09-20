@@ -321,16 +321,17 @@ hr{
 
 /*Comienza personalizacion seccion Productos*/
 .seccionProductos{
-    background-color: var(--light-gray-1, #FAFAFA);
+    background-color: white;
 }
 
 /*Comienza personalizacion Titulo seccion Productos*/
 .productosTitulo {
     margin-top: 40px;   
+    margin-bottom: 20px;
     color: var(--text-color, #252B42);
     text-align: left;
     font-family: Montserrat;
-    font-size: 30   px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
