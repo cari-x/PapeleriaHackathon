@@ -404,3 +404,89 @@ padding: 0 15px;
     font-size: 13px;
     color: #aaa;
 }
+
+/* info CSS Gabriela Reseñas */
+
+.cont__resena {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    border-radius: 9px;
+}
+
+.resenas {
+    text-align: justify;
+    position: relative;
+}
+
+
+.resenas {
+    display: flex;
+}
+
+.resena-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.resena-comentario {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resena-reacciones {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 16px;
+}
+
+.resena-titulo {
+    color: var(--text-color, #252B42);
+    /* h2 */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+    margin-right: 100px;
+}
+
+.userImg {
+    width: 90px;
+    height: 85px;
+    border-radius: 75px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.resena-subtitulo {
+    flex: 1 0 0;
+    color: var(--second-text-color, #737373);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.resena-opinion {
+    color: var(--second-text-color, #737373);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    margin-right: 12px;
+}
+.estrellas {
+    display: flex;
+    font-size: 10px;
+    color: #bbb;
+    transition: color 0.3s;
+    
+}
