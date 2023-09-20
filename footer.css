@@ -1,0 +1,197 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monserrat';
+    font-weight: 400;
+    background-color: #ededed;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    transition: 0.5;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+header .shopping img {
+    width: 40px;
+}
+
+header .shopping span {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top:  -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+
+
+/**** CARRITO DE COMPRAS ****/
+.card {
+    position: fixed;
+    top: 0;
+    left: calc(100% - 500px);
+    width: 500px;
+    background-color: bisque;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.card h1 {
+    color: #e8bc0e;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkout div {
+    background-color: #e8bc0e;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkout div:nth-child((2)) {
+    background-color: #1c1f25;
+    color: #fff;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+
+/***** MARCAS *****/
+.marcas__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.brand{
+    margin:auto;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marca__img1 {
+    width: 150px;
+}
+
+.marca__img {
+    width: 200px;
+}
+
+/***** FOOTER ******/
+
+.footer {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+    color: #2A7CC7;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+display: inline-block;
+padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
