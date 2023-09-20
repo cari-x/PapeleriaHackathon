@@ -1,5 +1,5 @@
 //? Variables
-const productList = [];
+export const productList = [];
 
 function ingresarProducto(nombre,calificacion,comentarios,disponibilidad,descripcion,colores,precio,imagen) {
     const producto = new Map();
