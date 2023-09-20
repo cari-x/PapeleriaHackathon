@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">       
+        <div class="encabezado__paginas">
+            <nav class="paginas__contenedor">
+                <li>
+                    <a class="paginas__logo " href="">Piper Power</a>
+                </li>
+                <ul class="paginas__contenedor paginas__contenedor--navegacion">
+                    <li>
+                        <a class="paginas__link paginas__link-bold" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="paginas__link" href="">Products</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="encabezado__icons">
+                <div class="icono__carrito-compras">
+                    <ion-icon class="encabezado__iconos-opciones" name="cart-outline"></ion-icon>
+                    <span>1</span>
+                </div>
+                <ion-icon class="encabezado__iconos-opciones" name="heart-circle-outline"></ion-icon>
+            </div>
+        </div>     
+    </header>
+
+    <main class="cuerpo">
+
+        <section class="hero">
+            <ion-icon class="hero__flechas-slider" name="chevron-back-outline"></ion-icon>
+
+            <ion-icon  class="hero__flechas-slider hero__flechas-slider--derecha" name="chevron-forward-outline"></ion-icon>
+
+            <article class="hero__banner">              
+                <div class="banner__info">
+                    <h2>PROMOCIONES INCREIBLES</h2>
+                    <p>We know how large objects will act, but things on a 
+                        small scale just do not act that way.</p>
+                    <a href="">Shop now</a>
+                </div>                
+            </article>
+    
+            <article class="hero__oferta"></article>
+        </section>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
