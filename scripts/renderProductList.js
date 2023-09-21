@@ -1,6 +1,6 @@
 import { addProductsShoppingCart } from './addProductoCarrito.js'
 
-const galleryProducts = document.querySelector('.productosCards');
+const galleryProducts = document.querySelector('#productosPapeleria');
 
 // Es crear el HTML para mostrarlo en pantalla de los productos de home
 export function productRender(array) {
