@@ -477,6 +477,7 @@ padding: 0 15px;
 
 /* info CSS Gabriela Reseñas */
 
+/* Asignar margenes al contenedor principal de las opiniones */
 .cont__resena {
     display: flex;
     padding-bottom: 0px;
@@ -484,19 +485,18 @@ padding: 0 15px;
     border-radius: 9px;
 }
 
+/* Adaptamos los contenedores para que sean flexibles */
 .resenas {
     text-align: justify;
     position: relative;
-}
-
-
-.resenas {
     display: flex;
 }
 
+/* Contenedor que guarda las reacciones. Especificamos: uno debajo de otro */
 .resena-info {
     display: flex;
     flex-direction: column;
+    margin-top: 45px;
 }
 
 .resena-comentario {
@@ -556,7 +556,19 @@ padding: 0 15px;
 .estrellas {
     display: flex;
     font-size: 10px;
-    color: #bbb;
+    color: goldenrod;
     transition: color 0.3s;
-    
+}
+
+.reaccionCorazon {
+        cursor: pointer;
+        color: pink;
+}
+
+.reaccionCorazon:hover {
+    color: red;
+}
+
+.boton-cora {
+    border: none;
 }
