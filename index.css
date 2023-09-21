@@ -3,7 +3,7 @@
 :root{
     font-family: 'Montserrat', sans-serif;
 
-    --hover-color: #2A7CC7;
+    --hover-color: #70d2c7;
     --light-background-color: #FFF;
     --dark-background-color : #252B42;
     --primary-color: #23A6F0;
@@ -36,7 +36,12 @@ ion-icon {
 
 /* Encabezado */
 
+
+
 .encabezado{
+    position: sticky;
+    top: 0; 
+    z-index: 2;
     background: var(--hover-color);
     display: flex;
     justify-content: center;
@@ -49,6 +54,17 @@ ion-icon {
     justify-content: space-between;
     width: 100%;
     max-width: 1050px;
+}
+
+.conetenedor__marca{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.img__log {
+    width: 130px;
+    height: 130px;
 }
 
 .paginas__contenedor{
@@ -141,8 +157,8 @@ section{
 }
 
 .hero__banner{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url('./assets/imagen-banner.jpeg'), lightgray 50%;
