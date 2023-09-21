@@ -1,7 +1,7 @@
 //? Variables
 export const productList = []; // Producto1 Producto2 Producto3 Producto4 Producto5 Producto6
 
-function ingresarProducto(nombre,calificacion,comentarios,disponibilidad,descripcion,precio,imagen) {
+function ingresarProducto(nombre,calificacion,comentarios,disponibilidad,descripcion,precio,imagen,isThereBook) {
     const producto = new Map();
 
     producto.set('nombre', nombre);
@@ -11,6 +11,7 @@ function ingresarProducto(nombre,calificacion,comentarios,disponibilidad,descrip
     producto.set('descripcion', descripcion);
     producto.set('precio', precio);
     producto.set('imagen', imagen);
+    producto.set('libro', isThereBook);
     
     productList.push(producto);
 }
@@ -22,7 +23,8 @@ ingresarProducto(
     true, //¿Esta disponible ?
     'Punta gruesa - Excelente suavidad y cobertura - Minas resistentes - Gratis tajalápiz - Incluye 2 colores metalizados.', //Descripcion
     28100, // Precio
-    'img/productoPapeleria1.webp' //Imagen
+    'img/productoPapeleria1.webp', //Imagen,
+    false //Es libro?
 );
 ingresarProducto(
     'RESALTADOR DELGADO SHARPIE NOTE X 12 UNIDADES', 
@@ -31,7 +33,8 @@ ingresarProducto(
     true, 
     'Marcadores Sharpie que marcan sobre la mayoría de superficies. Cantidad: 12 marcadores punta cincel surtidos-La punta de pincel versátil 2 en 1 le permite cambiar rápidamente entre líneas precisas y gruesas-Medidas: 19.5 cm x 18 cm x 2 cm en empaque.', //Descripcion
     42300, 
-    'img/productoPapeleria2.webp' 
+    'img/productoPapeleria2.webp',
+    false //Es libro? 
 );
 ingresarProducto(
     'MARCADOR SHARPIE NEÓN, 5 UNIDADES SURTIDAS', 
@@ -40,7 +43,8 @@ ingresarProducto(
     true, 
     'Marcador Sharpie Neón, 5 unidades surtidas', //Descripcion
     24900, 
-    'img/productoPapeleria3.webp' 
+    'img/productoPapeleria3.webp',
+    false //Es libro? 
 );
 ingresarProducto(
     'BOLÍGRAFO PAPERMATE INKJOY GEL X 2 UNIDADES, COLOR NEGRO', 
@@ -49,7 +53,8 @@ ingresarProducto(
     true, 
     'Bolígrafo PaperMate Inkjoy gel x 2 unidades, color negro: Características: - Tinta de secado rápido - Reduce manchas - Ergonómicos (un cómodo grip que envuelve todo el bolígrafo) - Suaves', //Descripcion
     16300, 
-    'img/productoPapeleria4.webp' 
+    'img/productoPapeleria4.webp',
+    false //Es libro? 
 );
 ingresarProducto(
     'PLUMONES LAVABLES PAPERMATE X 12 UNIDADES', 
@@ -58,7 +63,8 @@ ingresarProducto(
     true, 
     'Plumones gruesos PaperMate • Lavables • Punta bala • Trazo mediano • Total unidades: 12 • Marcadores unipunta • Colores vivos e intensos', //Descripcion
     21200, 
-    'img/productoPapeleria5.webp' 
+    'img/productoPapeleria5.webp',
+    false //Es libro? 
 );
 ingresarProducto(
     'TIJERA PUNTA ROMA 13 CM PARA ZURDO SURTIDA', 
@@ -67,7 +73,8 @@ ingresarProducto(
     true, 
     'Encuentra en Panamericana elementos de calidad en insumos de papelería y oficina: Tijeras - 13 cm - surtida - punta roma - para zurdos', //Descripcion
     5500, 
-    'img/productoPapeleria6.webp' 
+    'img/productoPapeleria6.webp',
+    false //Es libro? 
 );
 ingresarProducto(
     'CUADERNO CUADRICULADO DE 160 HOJAS 5 MATERIAS', 
@@ -76,7 +83,8 @@ ingresarProducto(
     true, 
     'Regresa a clase con los mejores cuadernos Características - Cuadriculado - 160 hojas - Argollado - 5 materias - Stickers Incluye - Datos personales ', //Descripcion
     26500, 
-    'img/productoPapeleria7.webp' 
+    'img/productoPapeleria7.webp',
+    false //Es libro?
 );
 ingresarProducto(
     'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
@@ -85,5 +93,86 @@ ingresarProducto(
     true, 
     'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
     10900, 
-    'img/productoPapeleria8.webp' 
+    'img/productoPapeleria8.webp',
+    false //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg1.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg2.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg3.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg4.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg5.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg6.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg7.svg',
+    true //Es libro?
+);
+ingresarProducto(
+    'BORRADOR DE NATA FABER CASTELL, 10 UNIDADES', 
+    5,
+    50, 
+    true, 
+    'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
+    10900, 
+    'img/productoImg8.svg',
+    true //Es libro?
 );

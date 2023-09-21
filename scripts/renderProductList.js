@@ -1,6 +1,7 @@
 import { addProductsShoppingCart } from './addProductoCarrito.js'
 
 const galleryProducts = document.querySelector('#productosPapeleria');
+const galleryProductsLibros = document.querySelector('#productosLibros');
 
 // Es crear el HTML para mostrarlo en pantalla de los productos de home
 export function productRender(array) {
@@ -27,7 +28,12 @@ export function productRender(array) {
         //Estructurar HTML
         contenedorImagen.appendChild(productoImagen);
         tarjetaProducto.append(contenedorImagen,botonAñadirCarrito);
-        galleryProducts.appendChild(tarjetaProducto);
+
+        if (product.get('libro') === true) {
+            galleryProductsLibros.appendChild(tarjetaProducto);
+        } else {
+            galleryProducts.appendChild(tarjetaProducto);
+        }
         
         //Eventos de escucha
         contenedorImagen.addEventListener('click', () => createProductDetailAside (product.get('precio'),product.get('nombre'),product.get('descripcion'),product.get('imagen')));
