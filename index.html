@@ -33,7 +33,7 @@
             <div class="encabezado__icons">
                 <div class="icono__carrito-compras">
                     <ion-icon id="carritoCompras" class="encabezado__iconos-opciones" name="cart-outline"></ion-icon>
-                    <span>1</span>
+                    <span class="total"></span>
                 </div>
                 <ion-icon class="encabezado__iconos-opciones" name="heart-circle-outline"></ion-icon>
             </div>
@@ -45,9 +45,17 @@
         <h1>Carrito de compras</h1> 
         <!-- <ul class="listCard"></ul> -->
         <div class="list"></div>
+
+        <p></p>
         <div class="checkout">
-            <div class="total">0</div>
-            <div id="cerrarCarrito" class="closeShopping">Cerrar</div>
+            <div class="checkout__precio-total">
+                <p>Total :</p>
+                <p id="totalCompra">0</p>
+            </div>
+            <div>
+                <div class="total">0</div>
+                <div id="cerrarCarrito" class="closeShopping">Cerrar</div>
+            </div>
         </div>
     </div>
 

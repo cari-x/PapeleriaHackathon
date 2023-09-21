@@ -66,7 +66,9 @@ let products = [
 ];
 
 let listCards = [];
+
 function initApp(){
+
     products.forEach((value, key)=>{
         let newDiv = document.createElement('div');
         newDiv.innerHTML = `
@@ -81,6 +83,7 @@ function initApp(){
 
 initApp();
 
+
 function addToCard(key){
     if(listCards[key] == null){
         listCards[key] = products[key];
@@ -90,6 +93,7 @@ function addToCard(key){
 }
 
 function reloadCard(){
+
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
@@ -116,6 +120,7 @@ function reloadCard(){
     total.innerText = totalPrice.toLocaleString();
     quantity.innerHTML = count;
 }
+
 function changeQuantity(key, quantity){
     if(quantity == 0){
         delete listCards[key];
