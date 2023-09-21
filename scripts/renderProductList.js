@@ -2,6 +2,9 @@ import { addProductsShoppingCart } from './addProductoCarrito.js'
 
 const galleryProducts = document.querySelector('#productosPapeleria');
 const galleryProductsLibros = document.querySelector('#productosLibros');
+const carritoCompras = document.querySelector('.card');
+const cuerpo = document.querySelector('.cuerpo');
+
 
 // Es crear el HTML para mostrarlo en pantalla de los productos de home
 export function productRender(array) {
@@ -43,6 +46,10 @@ export function productRender(array) {
 
 //Creacion dinamica Detalles del producto Home
 function createProductDetailAside (precio,nombre,descripcion,imagen){
+
+    if(!carritoCompras.classList.contains('esconder-Elementos')){
+        carritoCompras.classList.add('esconder-Elementos');
+    }
     
     //Elemento Padre
     const contenedorPrincipal = document.querySelector('.seccionProductos')
@@ -83,7 +90,7 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
     //Eventos de escucha
     contenedorIconClose.addEventListener('click', cerrarModal)
     botonAñadir.addEventListener('click', () => addProductsShoppingCart (imagen,nombre,precio));
-    
+
 }
 
 
@@ -106,7 +113,6 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
 </div> */}
 
 function cerrarModal () {
-    const contenedorPrincipal = document.querySelector('.seccionProductos')
-    const contenedorModal = document.querySelector('.modal')
-    contenedorPrincipal.removeChild(contenedorModal)
+    const modal = document.getElementById('modal');
+    modal.remove();
 }
