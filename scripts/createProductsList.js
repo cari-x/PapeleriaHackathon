@@ -14,9 +14,6 @@ function ingresarProducto(nombre,calificacion,comentarios,disponibilidad,descrip
     producto.set('imagen', imagen);
     
     productList.push(producto);
-
-    
-    console.log(productList[0]);
 }
 
 ingresarProducto(
