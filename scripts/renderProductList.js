@@ -64,7 +64,7 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
 
     //Dar contenido a los elementos
     nombreProducto.textContent = nombre;
-    precioProducto.textContent = precio;
+    precioProducto.textContent = "$ "+ precio;
     descripcionProducto.textContent = descripcion;
     contenedorIconClose.textContent = 'cerrar';
     botonAñadir.textContent = 'Añadir al carrito';

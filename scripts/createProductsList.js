@@ -21,7 +21,7 @@ ingresarProducto(
     10, //NUmero de comentarios
     true, //¿Esta disponible ?
     'Punta gruesa - Excelente suavidad y cobertura - Minas resistentes - Gratis tajalápiz - Incluye 2 colores metalizados.', //Descripcion
-    "$28100", // Precio
+    28100, // Precio
     'img/productoPapeleria1.webp' //Imagen
 );
 ingresarProducto(
@@ -30,7 +30,7 @@ ingresarProducto(
     5, 
     true, 
     'Marcadores Sharpie que marcan sobre la mayoría de superficies. Cantidad: 12 marcadores punta cincel surtidos-La punta de pincel versátil 2 en 1 le permite cambiar rápidamente entre líneas precisas y gruesas-Medidas: 19.5 cm x 18 cm x 2 cm en empaque.', //Descripcion
-    "$42300", 
+    42300, 
     'img/productoPapeleria2.webp' 
 );
 ingresarProducto(
@@ -39,7 +39,7 @@ ingresarProducto(
     1, 
     true, 
     'Marcador Sharpie Neón, 5 unidades surtidas', //Descripcion
-    "$24900", 
+    24900, 
     'img/productoPapeleria3.webp' 
 );
 ingresarProducto(
@@ -48,7 +48,7 @@ ingresarProducto(
     10, 
     true, 
     'Bolígrafo PaperMate Inkjoy gel x 2 unidades, color negro: Características: - Tinta de secado rápido - Reduce manchas - Ergonómicos (un cómodo grip que envuelve todo el bolígrafo) - Suaves', //Descripcion
-    "$16300", 
+    16300, 
     'img/productoPapeleria4.webp' 
 );
 ingresarProducto(
@@ -57,7 +57,7 @@ ingresarProducto(
     1, 
     true, 
     'Plumones gruesos PaperMate • Lavables • Punta bala • Trazo mediano • Total unidades: 12 • Marcadores unipunta • Colores vivos e intensos', //Descripcion
-    "$21200", 
+    21200, 
     'img/productoPapeleria5.webp' 
 );
 ingresarProducto(
@@ -66,7 +66,7 @@ ingresarProducto(
     25, 
     true, 
     'Encuentra en Panamericana elementos de calidad en insumos de papelería y oficina: Tijeras - 13 cm - surtida - punta roma - para zurdos', //Descripcion
-    "$5500", 
+    5500, 
     'img/productoPapeleria6.webp' 
 );
 ingresarProducto(
@@ -75,7 +75,7 @@ ingresarProducto(
     5, 
     true, 
     'Regresa a clase con los mejores cuadernos Características - Cuadriculado - 160 hojas - Argollado - 5 materias - Stickers Incluye - Datos personales ', //Descripcion
-    "$26500", 
+    26500, 
     'img/productoPapeleria7.webp' 
 );
 ingresarProducto(
@@ -84,6 +84,6 @@ ingresarProducto(
     50, 
     true, 
     'Insumos de calidad, para cubrir las necesidades en casa, la oficina, trabajo, estudio, etc. Borrador de nata no tóxico, sin protector. En estuche termoencogido por 10 unidades ', //Descripcion
-    "$10900", 
+    10900, 
     'img/productoPapeleria8.webp' 
 );
