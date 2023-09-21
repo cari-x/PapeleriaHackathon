@@ -56,7 +56,7 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
     contenedorModal.setAttribute('id','modal');
 
     contenidoModal.classList.add('modal-contenido');
-    contenedorIconClose.classList.add('madal-cerrar');
+    contenedorIconClose.classList.add('modal-cerrar');
     contenedorIconClose.setAttribute('id','cerrarModal');
 
     imagenProducto.setAttribute('src', imagen);
