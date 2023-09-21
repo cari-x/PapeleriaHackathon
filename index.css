@@ -160,6 +160,18 @@ ion-icon {
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.closeShopping{
+    font-size: 20px;
+    color: white;
+}
+
+.total{
+    font-size: 20px;
+    color: white;
 }
 
 .card .checkout div {
@@ -207,6 +219,15 @@ ion-icon {
     gap: 8px;
 }
 
+.buttonEliminar{
+    color: white;
+    background-color: #e8bc0e;
+    padding: 10px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: bold;
+}
+
 .item__carrito-nombre{
     color: var(--dark-background-color);
     font-size: 14px;
@@ -217,10 +238,12 @@ ion-icon {
 
 .item__carrito-precio{
     color: var(--second-text-color, #737373);
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.2px;
+    color: white;
+    font-weight: bold;
+
 }
 
 /* Cuerpo */

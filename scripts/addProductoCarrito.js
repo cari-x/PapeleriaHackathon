@@ -15,9 +15,9 @@ export function addProductsShoppingCart(imagen,nombre,precio) {
         <img src= "${imagen}"/>
         <div class="item__carrito-info">
             <p class="item__carrito-nombre">${nombre}</p>
-            <p class="item__carrito-precio">${precio}</p>
+            <p class="item__carrito-precio">$ ${precio}</p>
         </div>
-        <button>Eliminar</button>
+        <button Class="buttonEliminar">Eliminar</button>
     `;
     // Agregar el nuevo div al contenedor de productos agregados
     contendorProductosAgregados.appendChild(newDiv);
