@@ -345,7 +345,6 @@ hr{
     margin-top: 40px;   
     margin-bottom: 20px;
     color: var(--text-color, #252B42);
-    text-align: left;
     font-family: Montserrat;
     font-size: 30px;
     font-style: normal;
@@ -395,7 +394,7 @@ hr{
 
 .productoButton{
 
-    background-color: rgba(35, 166, 240, 1);
+    background-color: rgba(112, 210, 199, 1);
     color: white;
     border-radius: 10px;
     padding: 15px 15px 15px 15px;
@@ -457,7 +456,7 @@ hr{
 
 .footer .social a:hover {
     opacity: 0.9;
-    color: #2A7CC7;
+    color: #70d2c7;
 }
 
 .footer ul {
@@ -602,17 +601,22 @@ padding: 0 15px;
 .modal-contenido {
     background-color: white;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 150px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
 }
 
-/* Estilo del botón para cerrar el modal */
-.modal-cerrar {
+.modal-contenido h2{
     font-size: 20px;
-    cursor: pointer;
-    color: #333;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.modal-contenido p{
+    font-size: 15px;
+    line-height: 25px;
 }
 
 /* Estilo de la imagen del producto */
@@ -622,11 +626,26 @@ padding: 0 15px;
     margin-bottom: 10px;
 }
 
+/* Estilo del botón para cerrar el modal */
+.modal-cerrar {
+    margin: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
 /* Estilo del botón para añadir al carrito */
 #agregarAlCarrito {
-    background-color: #28A745;
+    margin: 20px;
+    margin-left: 60px;
+    background-color: #70d2c7;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
