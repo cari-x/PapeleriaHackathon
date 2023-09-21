@@ -64,6 +64,7 @@ let products = [
         price: 12000
     },
 ];
+
 let listCards = [];
 function initApp(){
     products.forEach((value, key)=>{
@@ -77,7 +78,9 @@ function initApp(){
         list.appendChild(newDiv);
         })
 }
+
 initApp();
+
 function addToCard(key){
     if(listCards[key] == null){
         listCards[key] = products[key];
