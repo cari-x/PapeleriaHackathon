@@ -125,7 +125,7 @@ ion-icon {
     top: 0;
     left: calc(100% - 500px);
     width: 500px;
-    background-color: bisque;
+    background-color: rgb(252, 252, 252);
     height: 100vh;
     transition: 0.5s;
     z-index: 4;
@@ -152,6 +152,8 @@ ion-icon {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
 }
 
 .checkout__precio-total{
@@ -175,9 +177,11 @@ ion-icon {
 }
 
 .card .checkout div {
-    background-color: #e8bc0e;
-    width: 100%;
-    height: 70px;
+    background-color:rgba(112, 210, 199, 1);
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 12px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,6 +230,7 @@ ion-icon {
     border: none;
     border-radius: 10px ;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .item__carrito-nombre{
@@ -639,6 +644,7 @@ hr{
 .productoImg{
     width: 239px;
     height: 280px;
+    cursor: pointer;
 }
 
 .productoImg img{
@@ -648,7 +654,7 @@ hr{
 
 
 .productoButton{
-
+    cursor: pointer;
     background-color: rgba(112, 210, 199, 1);
     color: white;
     border-radius: 10px;
@@ -656,6 +662,17 @@ hr{
     margin-bottom: 25px;
     text-decoration: bold;
     border: none;
+    transition: transform 0.3s; /* Agregamos una transición en la propiedad 'transform' */
+
+    &:hover{
+        background-color: var(--primary-color);
+        transform: scale(1.1);
+    }
+
+    &:active,
+    &:focus{
+        transform: scale(1);
+    }
 }
 
 /*info CSS Joscari footer */
@@ -865,15 +882,6 @@ border: none;
 }
 
 /* Estilo del contenido del modal */
-.modal-contenido {
-    background-color: white;
-    max-width: 400px;
-    margin: 150px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    
-}
 
 .modal-contenido h2{
     font-size: 20px;
@@ -888,114 +896,61 @@ border: none;
 
 /* Estilo de la imagen del producto */
 .modal-contenido img {
-    max-width: 100%;
-    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    max-height: 200px;
     margin-bottom: 10px;
-}
-
-/* Estilo del botón para cerrar el modal */
-.modal-cerrar {
-    margin: 20px;
-    background-color: whitesmoke;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-
-/* Estilo del botón para añadir al carrito */
-#agregarAlCarrito {
-    margin: 20px;
-    margin-left: 60px;
-    background-color: #70d2c7;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.esconder-Elementos{
-    display: none;
-}
-
-.esconder-Elementos{
-    display: none;
-}
-
-/* info Modal*/
-#abrirModal {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilo del modal */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
 }
 
 /* Estilo del contenido del modal */
 .modal-contenido {
     background-color: white;
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
     margin: 150px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    
-}
-
-.modal-contenido h2{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 25px;
-}
-
-.modal-contenido p{
-    font-size: 15px;
-    line-height: 25px;
-}
-
-/* Estilo de la imagen del producto */
-.modal-contenido img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
 }
 
 /* Estilo del botón para cerrar el modal */
 .modal-cerrar {
-    margin: 20px;
     background-color: whitesmoke;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
+
+    &:hover{
+        background-color: #e81c3e;
+        color: white;
+    }
 }
 
 
 /* Estilo del botón para añadir al carrito */
 #agregarAlCarrito {
-    margin: 20px;
-    margin-left: 60px;
+    margin: 14px 0;
     background-color: #70d2c7;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
+
+    &:hover{
+        background-color: var(--primary-color);
+    }
+}
+
+.esconder-Elementos{
+    display: none;
+}
+
+.esconder-Elementos{
+    display: none;
 }
 
 .esconder-Elementos{
